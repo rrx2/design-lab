@@ -1,14 +1,13 @@
 # Design Lab
 
-Studi di explanatory design su dati e ricerca medica.
+Un solo repo per tre attività separate:
 
-**Metodo:** ogni studio segue il ciclo *See → Name → Copy → Vary*: si sceglie un riferimento, lo si scompone, lo si rifà fedelmente su dati medici, poi si rifà lo stesso contenuto in altri stili.
+- **`ricerca/`**: le conclusioni delle ricerche fatte con Claude, un file per argomento, con le fonti.
+- **`video/`**: video explanatory nati da una ricerca. Script, storyboard, prompt per Midjourney / Nano Banana, immagini e motion design con HyperFrames.
+- **`design/`**: studio dell'explanatory design con il metodo *See → Name → Copy → Vary*. Contiene l'atlante degli stili (`styles/`) e la galleria degli studi (`articoli/`).
 
-## Struttura
+Ricerca e video sono collegati dal nome dell'argomento: `ricerca/<argomento>.md` → `video/<argomento>/`.
 
-- `styles/`: un file CSS per stile (palette, font, texture, forme). È l'atlante degli stili in forma di codice.
-- `articoli/<nome>/`: uno studio, con le sue versioni nei vari stili.
-- `articoli/index.json`: elenco degli studi mostrati nella galleria.
-- `index.html`: la galleria.
+Ogni cartella ha un `CLAUDE.md` con il metodo di quell'area. Quello alla radice spiega a Claude come capire su quale area stai lavorando.
 
 Pubblicato con GitHub Pages: https://rrx2.github.io/design-lab/
